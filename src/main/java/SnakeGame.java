@@ -122,10 +122,10 @@ public class SnakeGame extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        String eatSound = getClass().getClassLoader().getResource("eating.mp3").toString();
+        String eatSound = getClass().getClassLoader().getResource("click.mp3").toString();
         AudioClip eatClip = new AudioClip(eatSound);
 
-        String crushSound = getClass().getClassLoader().getResource("crush.mp3").toString();
+        String crushSound = getClass().getClassLoader().getResource("jab.mp3").toString();
         AudioClip crushClip = new AudioClip(crushSound);
         // intro scene
         Image introImage = new Image("intro.png", 1300, 805, true, true);
@@ -226,9 +226,9 @@ public class SnakeGame extends Application {
                         if(head.isFruit) {
                             if(eaten == false) {
                                 // remove the fruit
+                                eatClip.play();
                                 tileGroup.getChildren().remove(fruitTrack[head.x][head.y]);
                                 // Add fruit number and score
-                                eatClip.play();
                                 fruitNum++;
                                 fruitText.setText("Fruit:  " + fruitNum);
                                 score+=level*10;
