@@ -41,10 +41,10 @@ public class SnakeGame extends Application {
     int direction; // 0 not set, 1 right, 2 left
     int currDir;
 
-    Text lvlText = new Text(1070, 88, null);
-    Text fruitText = new Text(1070, 158, null);
-    Text scoreText = new Text(1070, 228, null);
-    Text timeText = new Text(1070, 298, null);
+    Text lvlText = new Text(1070, 238, null);
+    Text fruitText = new Text(1060, 308, null);
+    Text scoreText = new Text(1060, 378, null);
+    Text timeText = new Text(1060, 448, null);
     int maxScore = 0;
     int timeCount;
     int countDown = 25;
@@ -65,6 +65,88 @@ public class SnakeGame extends Application {
         Rectangle background = new Rectangle(240,0,800,800);
         background.setFill(Color.valueOf("#45a5b5"));
         gameRoot.getChildren().add(background);
+
+        // Add instruction
+        Image letR = new Image("letter-r.png", 60, 60, true, true);
+        ImageView rrImageView = new ImageView(letR);
+        rrImageView.setX(15);
+        rrImageView.setY(705);
+        gameRoot.getChildren().add(rrImageView);
+        Text rrText = new Text(85,752,"Restart");
+        rrText.setFill(Color.WHITE);
+        rrText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        gameRoot.getChildren().add(rrText);
+
+        Image letQ = new Image("letter-q.png", 60, 60, true, true);
+        ImageView qqImageView = new ImageView(letQ);
+        qqImageView.setX(15);
+        qqImageView.setY(615);
+        gameRoot.getChildren().add(qqImageView);
+        Text qqText = new Text(85,662,"Quit");
+        qqText.setFill(Color.WHITE);
+        qqText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        gameRoot.getChildren().add(qqText);
+
+        Image letP = new Image("letter-p.png", 60, 60, true, true);
+        ImageView ppImageView = new ImageView(letP);
+        ppImageView.setX(15);
+        ppImageView.setY(525);
+        gameRoot.getChildren().add(ppImageView);
+        Text ppText = new Text(85,572,"Pause");
+        ppText.setFill(Color.WHITE);
+        ppText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        gameRoot.getChildren().add(ppText);
+
+        Image let3 = new Image("number-3.png", 60, 60, true, true);
+        ImageView ttImageView = new ImageView(let3);
+        ttImageView.setX(15);
+        ttImageView.setY(435);
+        gameRoot.getChildren().add(ttImageView);
+        Text ttText = new Text(85,482,"Level 3");
+        ttText.setFill(Color.WHITE);
+        ttText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        gameRoot.getChildren().add(ttText);
+
+        Image let2 = new Image("number-2 (1).png", 60, 60, true, true);
+        ImageView twoImageView = new ImageView(let2);
+        twoImageView.setX(15);
+        twoImageView.setY(345);
+        gameRoot.getChildren().add(twoImageView);
+        Text twoText = new Text(85,392,"Level 2");
+        twoText.setFill(Color.WHITE);
+        twoText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        gameRoot.getChildren().add(twoText);
+
+        Image let1 = new Image("keyboard-key-1.png", 60, 60, true, true);
+        ImageView oneImageView = new ImageView(let1);
+        oneImageView.setX(15);
+        oneImageView.setY(255);
+        gameRoot.getChildren().add(oneImageView);
+        Text oneText = new Text(85,302,"Level 1");
+        oneText.setFill(Color.WHITE);
+        oneText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        gameRoot.getChildren().add(oneText);
+
+        Image letRt = new Image("right-arrow.png", 60, 60, true, true);
+        ImageView rtImageView = new ImageView(letRt);
+        rtImageView.setX(15);
+        rtImageView.setY(165);
+        gameRoot.getChildren().add(rtImageView);
+        Text rtText = new Text(85,212,"Right");
+        rtText.setFill(Color.WHITE);
+        rtText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        gameRoot.getChildren().add(rtText);
+
+        Image letLeft = new Image("left-arrow.png", 60, 60, true, true);
+        ImageView llImageView = new ImageView(letLeft);
+        llImageView.setX(15);
+        llImageView.setY(75);
+        gameRoot.getChildren().add(llImageView);
+        Text llText = new Text(85,122,"Left");
+        llText.setFill(Color.WHITE);
+        llText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        gameRoot.getChildren().add(llText);
+
         // Add game board
         // 780 x 780
         int startX = 250;
@@ -110,25 +192,25 @@ public class SnakeGame extends Application {
         Group textGroup = new Group();
         // level
         lvlText.setText("Level  " + level);
-        lvlText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD, FontPosture.ITALIC,40));
+        lvlText.setFont(Font.font("Bangla MN",FontWeight.BOLD, FontPosture.ITALIC,45));
         lvlText.setFill(Color.WHITE);
         // fruits
-        fruitText.setText("Fruits:  " + fruitNum);
-        fruitText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD, FontPosture.ITALIC,35));
+        fruitText.setText("Fruits: " + fruitNum);
+        fruitText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD, FontPosture.ITALIC,35));
         fruitText.setFill(Color.WHITE);
         // score
-        scoreText.setText("Score:  " + score);
-        scoreText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD, FontPosture.ITALIC,35));
+        scoreText.setText("Score: " + score);
+        scoreText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD, FontPosture.ITALIC,35));
         scoreText.setFill(Color.WHITE);
         // time
         if (level == 3) {
-            timeText.setText("Time:  0");
+            timeText.setText("Time: 0");
             timeCount = 0;
         } else {
-            timeText.setText("Time:  30");
-            timeCount = 10;
+            timeText.setText("Time: 30");
+            timeCount = 30;
         }
-        timeText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD, FontPosture.ITALIC,35));
+        timeText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD, FontPosture.ITALIC,35));
         timeText.setFill(Color.WHITE);
         textGroup.getChildren().addAll(lvlText,fruitText,scoreText,timeText);
         gameRoot.getChildren().add(textGroup);
@@ -150,14 +232,14 @@ public class SnakeGame extends Application {
         introRoot.getChildren().add(introImageView);
         Scene introScene = new Scene(introRoot,1280,800);*/
         Group introRoot = new Group();
-        Text introSen = new Text(60,200,"SNAKE            GAME");
+        Text introSen = new Text(40,200,"SNAKE       GAME");
         introSen.setFill(Color.valueOf("#4595a5"));
-        introSen.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,140));
+        introSen.setFont(Font.font("verdana",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,125));
         introRoot.getChildren().add(introSen);
 
-        Text credit = new Text(860,290,"By Yilin Ding (20765311)");
+        Text credit = new Text(840,290,"By Yilin Ding (20765311)");
         credit.setFill(Color.valueOf("#4595a5"));
-        credit.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,40));
+        credit.setFont(Font.font("American Typewriter",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,35));
         introRoot.getChildren().add(credit);
 
         Image introImage = new Image("snake (1).png", 270, 260, true, true);
@@ -171,9 +253,9 @@ public class SnakeGame extends Application {
         back2.setY(300);
         introRoot.getChildren().add(back2);
 
-        Text introtips = new Text(85, 380, "Press return key        now to Start a new game");
+        Text introtips = new Text(55, 380, "Press return key        now to Start a new game");
         introtips.setFill(Color.WHITE);
-        introtips.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,60));
+        introtips.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,50));
         introRoot.getChildren().add(introtips);
 
         Image returnKey = new Image("return (1).png", 70, 70, true, true);
@@ -278,9 +360,9 @@ public class SnakeGame extends Application {
         snakeImageView.setX(50);
         snakeImageView.setY(40);
 
-        Text terSen = new Text(370,210,"GAME OVER!");
+        Text terSen = new Text(350,210,"GAME OVER!");
         terSen.setFill(Color.valueOf("#4595a5"));
-        terSen.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,140));
+        terSen.setFont(Font.font("verdana",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,125));
 
 
         Text terFruit = new Text(370, 400,null);
@@ -430,9 +512,9 @@ public class SnakeGame extends Application {
                                 tileGroup.getChildren().remove(fruitTrack[head.x][head.y]);
                                 // Add fruit number and score
                                 fruitNum++;
-                                fruitText.setText("Fruit:  " + fruitNum);
+                                fruitText.setText("Fruits: " + fruitNum);
                                 score+=level*10;
-                                scoreText.setText("Score:  " + score);
+                                scoreText.setText("Score: " + score);
 
                                 // randomly spawn a fruit
                                 Random rand = new Random();
@@ -469,14 +551,14 @@ public class SnakeGame extends Application {
                     if(countDown == 0) {
                         if(level == 3) {
                             ++timeCount;
-                            timeText.setText("Time:  " + timeCount);
+                            timeText.setText("Time: " + timeCount);
                         } else {
                             if(timeCount == 1) {
                                 ++level;
                                 setGameScene();
                             } else {
                                 --timeCount;
-                                timeText.setText("Time:  " + timeCount);
+                                timeText.setText("Time: " + timeCount);
                             }
                         }
                         countDown = 25;
@@ -524,8 +606,8 @@ public class SnakeGame extends Application {
                     setGameScene();
                 } else if(event.getCode() == KeyCode.Q) {
                     timeline.pause();
-                    terFruit.setText("Fruits:  " + fruitNum);
-                    terScore.setText("Score:  " + score);
+                    terFruit.setText("Fruits: " + fruitNum);
+                    terScore.setText("Score: " + score);
                     if(score > maxScore) maxScore = score;
                     terMax.setText("Highest Record:  " + maxScore);
                     primaryStage.setScene(terScene);
