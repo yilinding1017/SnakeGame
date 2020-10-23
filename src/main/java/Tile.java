@@ -1,4 +1,3 @@
-import javafx.scene.Group;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
@@ -59,24 +58,52 @@ public class Tile extends Rectangle {
 
     public void addSnake(int dir) {
         double speed = (double)tileSize/Math.pow(2,(4-SnakeGame.level));
+        int eyeFront = 5;
+        int eyeSide = 8;
         if(dir == 0) {
             // right
             snakeBody.setWidth(snakeBody.getWidth()+speed);
             snakeBody.setHeight(tileSize);
+
+            //SnakeGame.eye.setRadius(3);
+            SnakeGame.eye.setCenterX(snakeBody.getX()+snakeBody.getWidth()-eyeFront);
+            SnakeGame.eye.setCenterY(snakeBody.getY()+eyeSide);
+
+            SnakeGame.eye2.setCenterX(snakeBody.getX()+snakeBody.getWidth()-eyeFront);
+            SnakeGame.eye2.setCenterY(snakeBody.getY()+tileSize-eyeSide);
         } else if (dir == 1) {
             // down
             snakeBody.setWidth(tileSize);
             snakeBody.setHeight(snakeBody.getHeight()+speed);
+
+            //SnakeGame.eye.setRadius(3);
+            SnakeGame.eye.setCenterX(snakeBody.getX()+snakeBody.getWidth()-eyeSide);
+            SnakeGame.eye.setCenterY(snakeBody.getY()+snakeBody.getHeight()-eyeFront);
+
+            SnakeGame.eye2.setCenterX(snakeBody.getX()+eyeSide);
+            SnakeGame.eye2.setCenterY(snakeBody.getY()+snakeBody.getHeight()-eyeFront);
         } else if (dir == 2) {
             // left
             snakeBody.setWidth(snakeBody.getWidth()+speed);
             snakeBody.setHeight(tileSize);
             snakeBody.setX(xPos+tileSize-snakeBody.getWidth());
+
+            SnakeGame.eye.setCenterX(snakeBody.getX()+eyeFront);
+            SnakeGame.eye.setCenterY(snakeBody.getY()+tileSize-eyeSide);
+
+            SnakeGame.eye2.setCenterX(snakeBody.getX()+eyeFront);
+            SnakeGame.eye2.setCenterY(snakeBody.getY()+eyeSide);
         } else if (dir == 3) {
             // up
             snakeBody.setWidth(tileSize);
             snakeBody.setHeight(snakeBody.getHeight()+speed);
             snakeBody.setY(yPos+tileSize-snakeBody.getHeight());
+
+            SnakeGame.eye.setCenterX(snakeBody.getX()+eyeSide);
+            SnakeGame.eye.setCenterY(snakeBody.getY()+eyeFront);
+
+            SnakeGame.eye2.setCenterX(snakeBody.getX()+tileSize-eyeSide);
+            SnakeGame.eye2.setCenterY(snakeBody.getY()+eyeFront);
         }
     }
 
