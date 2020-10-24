@@ -26,3 +26,9 @@ Q: quit and display the high score screen
 - Splash screen shows how to play instruction and student name/id
 - Game screen shows fruits eaten, score, time as well as instructions
 - Final screen shows total fruits eaten, total score, highest record
+- Game plays and progresses as described in the game description
+
+**Technical Descriptions:**
+
+- Only used the Java platform libraries and JavaFX toolkits for the GUI
+- Use Gradle to manage builds

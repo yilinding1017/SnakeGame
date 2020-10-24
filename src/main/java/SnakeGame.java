@@ -19,7 +19,6 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -220,7 +219,10 @@ public class SnakeGame extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        String eatSound = getClass().getClassLoader().getResource("click.mp3").toString();
+        String clickSound = getClass().getClassLoader().getResource("click.mp3").toString();
+        AudioClip clickClip = new AudioClip(clickSound);
+
+        String eatSound = getClass().getClassLoader().getResource("eating.mp3").toString();
         AudioClip eatClip = new AudioClip(eatSound);
 
         String crushSound = getClass().getClassLoader().getResource("jab.mp3").toString();
@@ -463,6 +465,7 @@ public class SnakeGame extends Application {
                                 }
                                 // currDir does not change
                             } else if(direction == 1) {
+                                clickClip.play();
                                 // turn right
                                 if(currDir == 0) {
                                     nextHead = gameBoard[head.x][head.y+1];
@@ -477,6 +480,7 @@ public class SnakeGame extends Application {
                                 else currDir += 1;
 
                             } else if(direction == 2) {
+                                clickClip.play();
                                 // turn left
                                 if(currDir == 0) {
                                     nextHead = gameBoard[head.x][head.y-1];
