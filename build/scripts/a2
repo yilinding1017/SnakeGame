@@ -80,7 +80,8 @@ case "`uname`" in
     ;;
 esac
 
-CLASSPATH=$APP_HOME/lib/a2-1.0-SNAPSHOT.jar:$APP_HOME/lib/javafx-controls-11.0.2-mac.jar:$APP_HOME/lib/javafx-graphics-11.0.2-mac.jar:$APP_HOME/lib/javafx-graphics-11.0.2.jar:$APP_HOME/lib/javafx-base-11.0.2-mac.jar:$APP_HOME/lib/javafx-base-11.0.2.jar
+CLASSPATH=$APP_HOME/lib/a2-1.0-SNAPSHOT.jar:$APP_HOME/lib/javafx-controls-11.0.2-mac.jar:$APP_HOME/lib/javafx-media-11.0.2-mac.jar:$APP_HOME/lib/javafx-graphics-11.0.2-mac.jar:$APP_HOME/lib/javafx-graphics-11.0.2.jar:$APP_HOME/lib/javafx-base-11.0.2-mac.jar:$APP_HOME/lib/javafx-base-11.0.2.jar
+
 
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ] ; then
@@ -129,6 +130,7 @@ fi
 if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
     APP_HOME=`cygpath --path --mixed "$APP_HOME"`
     CLASSPATH=`cygpath --path --mixed "$CLASSPATH"`
+
     JAVACMD=`cygpath --unix "$JAVACMD"`
 
     # We build the pattern for arguments to be converted via cygpath

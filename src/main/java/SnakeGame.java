@@ -74,7 +74,7 @@ public class SnakeGame extends Application {
         gameRoot.getChildren().add(rrImageView);
         Text rrText = new Text(85,752,"Restart");
         rrText.setFill(Color.WHITE);
-        rrText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        rrText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,35));
         gameRoot.getChildren().add(rrText);
 
         Image letQ = new Image("letter-q.png", 60, 60, true, true);
@@ -84,7 +84,7 @@ public class SnakeGame extends Application {
         gameRoot.getChildren().add(qqImageView);
         Text qqText = new Text(85,662,"Quit");
         qqText.setFill(Color.WHITE);
-        qqText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        qqText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,35));
         gameRoot.getChildren().add(qqText);
 
         Image letP = new Image("letter-p.png", 60, 60, true, true);
@@ -94,7 +94,7 @@ public class SnakeGame extends Application {
         gameRoot.getChildren().add(ppImageView);
         Text ppText = new Text(85,572,"Pause");
         ppText.setFill(Color.WHITE);
-        ppText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        ppText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,35));
         gameRoot.getChildren().add(ppText);
 
         Image let3 = new Image("number-3.png", 60, 60, true, true);
@@ -104,7 +104,7 @@ public class SnakeGame extends Application {
         gameRoot.getChildren().add(ttImageView);
         Text ttText = new Text(85,482,"Level 3");
         ttText.setFill(Color.WHITE);
-        ttText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        ttText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,35));
         gameRoot.getChildren().add(ttText);
 
         Image let2 = new Image("number-2 (1).png", 60, 60, true, true);
@@ -114,7 +114,7 @@ public class SnakeGame extends Application {
         gameRoot.getChildren().add(twoImageView);
         Text twoText = new Text(85,392,"Level 2");
         twoText.setFill(Color.WHITE);
-        twoText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        twoText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,35));
         gameRoot.getChildren().add(twoText);
 
         Image let1 = new Image("keyboard-key-1.png", 60, 60, true, true);
@@ -124,7 +124,7 @@ public class SnakeGame extends Application {
         gameRoot.getChildren().add(oneImageView);
         Text oneText = new Text(85,302,"Level 1");
         oneText.setFill(Color.WHITE);
-        oneText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        oneText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,35));
         gameRoot.getChildren().add(oneText);
 
         Image letRt = new Image("right-arrow.png", 60, 60, true, true);
@@ -134,7 +134,7 @@ public class SnakeGame extends Application {
         gameRoot.getChildren().add(rtImageView);
         Text rtText = new Text(85,212,"Right");
         rtText.setFill(Color.WHITE);
-        rtText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        rtText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,35));
         gameRoot.getChildren().add(rtText);
 
         Image letLeft = new Image("left-arrow.png", 60, 60, true, true);
@@ -144,7 +144,7 @@ public class SnakeGame extends Application {
         gameRoot.getChildren().add(llImageView);
         Text llText = new Text(85,122,"Left");
         llText.setFill(Color.WHITE);
-        llText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,45));
+        llText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,35));
         gameRoot.getChildren().add(llText);
 
         // Add game board
@@ -192,7 +192,7 @@ public class SnakeGame extends Application {
         Group textGroup = new Group();
         // level
         lvlText.setText("Level  " + level);
-        lvlText.setFont(Font.font("Bangla MN",FontWeight.BOLD, FontPosture.ITALIC,45));
+        lvlText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD, FontPosture.ITALIC,45));
         lvlText.setFill(Color.WHITE);
         // fruits
         fruitText.setText("Fruits: " + fruitNum);
@@ -253,7 +253,7 @@ public class SnakeGame extends Application {
         back2.setY(300);
         introRoot.getChildren().add(back2);
 
-        Text introtips = new Text(55, 380, "Press return key        now to Start a new game");
+        Text introtips = new Text(55, 380, "Press return key        now to start a new game");
         introtips.setFill(Color.WHITE);
         introtips.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,50));
         introRoot.getChildren().add(introtips);
@@ -271,7 +271,7 @@ public class SnakeGame extends Application {
         introRoot.getChildren().add(rrImageView);
         Text rrText = new Text(220,752,"reset to this screen");
         rrText.setFill(Color.WHITE);
-        rrText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,50));
+        rrText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,40));
         introRoot.getChildren().add(rrText);
 
         Image letQ = new Image("letter-q.png", 60, 70, true, true);
@@ -281,7 +281,7 @@ public class SnakeGame extends Application {
         introRoot.getChildren().add(qqImageView);
         Text qqText = new Text(870,752,"quit the game");
         qqText.setFill(Color.WHITE);
-        qqText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,50));
+        qqText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,40));
         introRoot.getChildren().add(qqText);
 
         Image letP = new Image("letter-p.png", 60, 70, true, true);
@@ -291,7 +291,7 @@ public class SnakeGame extends Application {
         introRoot.getChildren().add(ppImageView);
         Text ppText = new Text(220,662,"pause and un-pause");
         ppText.setFill(Color.WHITE);
-        ppText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,50));
+        ppText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,40));
         introRoot.getChildren().add(ppText);
 
         Image let3 = new Image("number-3.png", 60, 70, true, true);
@@ -301,7 +301,7 @@ public class SnakeGame extends Application {
         introRoot.getChildren().add(ttImageView);
         Text ttText = new Text(870,662,"start level 3");
         ttText.setFill(Color.WHITE);
-        ttText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,50));
+        ttText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,40));
         introRoot.getChildren().add(ttText);
 
         Image letRt = new Image("right-arrow.png", 60, 70, true, true);
@@ -311,7 +311,7 @@ public class SnakeGame extends Application {
         introRoot.getChildren().add(rtImageView);
         Text rtText = new Text(220,572,"turn the snake right");
         rtText.setFill(Color.WHITE);
-        rtText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,50));
+        rtText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,40));
         introRoot.getChildren().add(rtText);
 
         Image let2 = new Image("number-2 (1).png", 60, 70, true, true);
@@ -321,7 +321,7 @@ public class SnakeGame extends Application {
         introRoot.getChildren().add(twoImageView);
         Text twoText = new Text(870,572,"start level 2");
         twoText.setFill(Color.WHITE);
-        twoText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,50));
+        twoText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,40));
         introRoot.getChildren().add(twoText);
 
         Image letLeft = new Image("left-arrow.png", 60, 70, true, true);
@@ -331,7 +331,7 @@ public class SnakeGame extends Application {
         introRoot.getChildren().add(llImageView);
         Text llText = new Text(220,482,"turn the snake left");
         llText.setFill(Color.WHITE);
-        llText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,50));
+        llText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,40));
         introRoot.getChildren().add(llText);
 
         Image let1 = new Image("keyboard-key-1.png", 60, 70, true, true);
@@ -341,7 +341,7 @@ public class SnakeGame extends Application {
         introRoot.getChildren().add(oneImageView);
         Text oneText = new Text(870,482,"start level 1");
         oneText.setFill(Color.WHITE);
-        oneText.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,50));
+        oneText.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,40));
         introRoot.getChildren().add(oneText);
 
         
@@ -367,7 +367,7 @@ public class SnakeGame extends Application {
 
         Text terFruit = new Text(370, 400,null);
         terFruit.setFill(Color.WHITE);
-        terFruit.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,70));
+        terFruit.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,60));
         Image app = new Image("apple.png", 70, 70, true, true);
         ImageView appImageView = new ImageView(app);
         appImageView.setX(280);
@@ -375,7 +375,7 @@ public class SnakeGame extends Application {
 
         Text terScore = new Text(370, 515,null);
         terScore.setFill(Color.WHITE);
-        terScore.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,70));
+        terScore.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,60));
         Image sc = new Image("score.png", 70, 70, true, true);
         ImageView scImageView = new ImageView(sc);
         scImageView.setX(280);
@@ -383,15 +383,15 @@ public class SnakeGame extends Application {
 
         Text terMax = new Text(370, 630,null);
         terMax.setFill(Color.WHITE);
-        terMax.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,70));
+        terMax.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,60));
         Image high = new Image("trophy.png", 70, 70, true, true);
         ImageView highImageView = new ImageView(high);
         highImageView.setX(280);
         highImageView.setY(570);
 
-        Text tips = new Text(200, 750, "Press R to Restart            Press Q to Quit");
+        Text tips = new Text(200, 750, "Press R to Restart          Press Q to Quit");
         tips.setFill(Color.WHITE);
-        tips.setFont(Font.font("Ariel",FontWeight.EXTRA_BOLD,FontPosture.ITALIC,60));
+        tips.setFont(Font.font("Bangla MN",FontWeight.EXTRA_BOLD,FontPosture.REGULAR,50));
 
         Image letterR = new Image("letter-r.png", 70, 70, true, true);
         ImageView rImageView = new ImageView(letterR);

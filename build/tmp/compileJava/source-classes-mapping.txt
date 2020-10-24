@@ -1,4 +1,7 @@
 SnakeGame.java
  SnakeGame
-snake.java
- snake
+ SnakeGame$1
+ SnakeGame$2
+ SnakeGame$3
+Tile.java
+ Tile
