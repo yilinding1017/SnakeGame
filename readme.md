@@ -1,3 +1,6 @@
+This is a implementation of the Snake Game with added bonus features like level, time, sounds and etc (using JavaFx as the main design tool)
+<br>
+
 *Yilin Ding*<br>*openjdk version "11.0.8" 2020-07-14*<br>*macOS 10.15.6 (MacBook Pro 2019)*<br>
 
  **Game Description:**<br>
