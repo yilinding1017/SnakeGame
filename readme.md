@@ -2,6 +2,8 @@
 
  **Game Description:**<br>
 
+![START](/Users/ding/Desktop/UW/FileFinder/START.png)
+
 This Snake game starts with a splash screen showing the instructions on how to play the game (as well as author name, i.e. me). By following the instructions on this splash screen (i.e. press return/enter key), the game will begin.
 
 ```embeddedjs
@@ -15,7 +17,11 @@ R: reset to the splash screen
 Q: quit and display the high score screen
 ```
 
- In the game, the snake is always in motion and it moves forward until Left/Right arrow key is pressed (unlike some version of snake game where all the arrow keys are used, this game is designed to only use left :arrow_left: and right :arrow_right: to turn). The snake will die if it eat itself or it hits the wall (the edge of the screen). The objective of the snake is to eat more fruits and get more scores. When the snake eats a piece of the fruit disappears and is immediately replaced by another piece of fruit randomly positioned. Every time the snake eats a piece of fruit, it gets one block longer. Also, there are three levels for this game, and each level starts with different number of fruits (not random, level 1 with 5 fruits, level 2 with 10 fruits and level 3 with 15 fruits). The speed of the snake increases when the level increases and the snakes begins at level 1. The player will play in the first two levels (level 1 and level 2) each for 30 seconds maximum and the level will automatically go up by one. When the player reaches level 3, the clock now count the number of seconds the player stayed in this level (instead of the 30-second count down like in level 1 and 2). The player can also go to corresponding levels by pressing digit 1,2,3. As instructions listed above, the player can press Q to quit, R to restart (return to the splash screen), and P to pause/unpause. When the snakes died, it will go to the final screen informing the player the fruits eaten, score, highest score for now.<br>
+ ![GAME](/Users/ding/Desktop/UW/FileFinder/GAME.png)
+
+In the game, the snake is always in motion and it moves forward until Left/Right arrow key is pressed (unlike some version of snake game where all the arrow keys are used, this game is designed to only use left :arrow_left: and right :arrow_right: to turn). The snake will die if it eat itself or it hits the wall (the edge of the screen). The objective of the snake is to eat more fruits and get more scores. When the snake eats a piece of the fruit disappears and is immediately replaced by another piece of fruit randomly positioned. Every time the snake eats a piece of fruit, it gets one block longer. Also, there are three levels for this game, and each level starts with different number of fruits (not random, level 1 with 5 fruits, level 2 with 10 fruits and level 3 with 15 fruits). The speed of the snake increases when the level increases and the snakes begins at level 1. The player will play in the first two levels (level 1 and level 2) each for 30 seconds maximum and the level will automatically go up by one. When the player reaches level 3, the clock now count the number of seconds the player stayed in this level (instead of the 30-second count down like in level 1 and 2). The player can also go to corresponding levels by pressing digit 1,2,3. As instructions listed above, the player can press Q to quit, R to restart (return to the splash screen), and P to pause/unpause. When the snakes died, it will go to the final screen informing the player the fruits eaten, score, highest score for now.<br>
+
+![END](/Users/ding/Desktop/UW/FileFinder/END.png)
 
 **Functional Descriptions:**
 
