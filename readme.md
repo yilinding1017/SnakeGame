@@ -1,4 +1,4 @@
-*Yilin Ding*<br>*20765311 y264ding*<br>*openjdk version "11.0.8" 2020-07-14*<br>*macOS 10.15.6 (MacBook Pro 2019)*<br>
+*Yilin Ding*<br>*openjdk version "11.0.8" 2020-07-14*<br>*macOS 10.15.6 (MacBook Pro 2019)*<br>
 
  **Game Description:**<br>
 
